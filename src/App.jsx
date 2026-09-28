@@ -57,6 +57,11 @@ function App(){
           <textarea id="descricao" name="descricao" rows="3"
           value={produto.descricao} onChange={atualizarCampo}/>
         </div>
+        <div className="campo-checkbox">
+          <input id="ativo" name="ativo" type="checkbox"
+          checked = {produto.ativo} onChange = {atualizarCampo}/>
+          <label htmlFor="ativo">Produto ativo</label>
+        </div>
       </form>
       <pre>{JSON.stringify(produto, null, 2)}</pre>
     </div>
